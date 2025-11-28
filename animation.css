@@ -21,3 +21,83 @@
     margin-left: 250px;
   }
 }
+
+.game-area {
+  margin: 80px;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(222, 236, 159);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.game-box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(235, 203, 191);
+}
+
+.box1 {
+  grid-area: 1/1;
+  animation-name: move-box1;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+}
+
+.box2 {
+  grid-area: 2/2;
+  animation-name: move-box2;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+}
+
+.box3 {
+  grid-area: 3/3;
+  animation-name: move-box3;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+}
+
+/* @keyframes move-box1 {
+  0% {
+    width: 0px;
+    height: 200px;
+  }
+  25% {
+    width: 0px;
+    height: 400px;
+  }
+
+  50% {
+    width: 0px;
+    height: 600px;
+  }
+
+  75% {
+    width: 300px;
+    height: 400px;
+  }
+  100% {
+    width: 600px;
+    height: 200px;
+  }
+}
+
+@keyframes move-box2 {
+  0% {
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-bottom: 100px;
+  }
+}
+
+@keyframes move-box3 {
+  0% {
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-bottom: 400px;
+  }
+} */
